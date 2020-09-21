@@ -1,0 +1,44 @@
+import React, { useState } from 'react'
+import classes from './AddListing.module.css'
+import axios from 'axios'
+const AddListing = () => {
+    const [image, setImage] = useState('');
+    const fileUploadRef = React.createRef();
+    const reader = new FileReader();
+    const imageUploadHandler = (e) => {
+        let file = e.target.files[0]
+        reader.onload = (input) => {
+            console.log(input.target.result)
+            setImage(input.target.result)
+        }
+    }
+ 
+    const submitHandler = (e) => {
+        const inputData = new FormData();
+        const file = fileUploadRef.current.files[0];
+        inputData.append('file', file)
+        fetch('http://rinx.tplinkdns.com:3002/add-image',{
+            method:'POST',
+            mode: 'no-cors',
+                redirect: 'follow',
+                headers:{
+                  'Content-Type': 'multipart/form-data',
+                },
+            body:inputData,
+        })
+       // axios.post('http://rinx.tplinkdns.com:3002/add-image', inputData, config)
+    }
+        return (
+            <div className={classes.container}>
+                <img style={{ width: '200px' }} src={image} ></img>
+                <form enctype="multipart/form-data">
+                    <input ref={fileUploadRef} type="file" name="file" id="input" />
+                    <button onClick={submitHandler} >Please Upload</button>
+                </form>
+                
+
+            </div>
+        )
+}
+
+export default AddListing

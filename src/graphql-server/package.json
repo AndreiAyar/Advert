@@ -1,0 +1,31 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.16",
+    "apollo-server-express": "^2.10.0",
+    "body-parser": "^1.19.0",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-graphql": "^0.9.0",
+    "form-data": "^3.0.0",
+    "graphql": "^14.6.0",
+    "jimp": "^0.9.5",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.26",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "sharp": "^0.25.1",
+    "uuid": "^7.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+.main_form{
+    margin-top:100px;
+    grid-row-start:1;
+    grid-column-start:2;
+    grid-row-end:3;
+}
+
+.main_form input{
+    width:250px;
+    display:block;
+    outline:none;
+    margin:0 auto;
+    height:40px;
+    border:solid 1px #ccc;
+    padding:5px;
+    font-size:1rem
+}
+
+.main_form div{
+    padding:20px;
+    text-align:center;
+
+}
+
+.main_form button{
+    margin-top:15px;
+    background-color:#3EC1CF;
+    height:40px;
+    width:300px;
+    font-size:15px;
+    font-weight:600;
+    color:white;
+    border:solid 1px #3EC1CF;
+    border-radius:2px;
+    cursor:pointer;
+    -webkit-appearance: none;
+  }
+
+
+  .main_form button:hover{
+    background-color:#64ceda;
+    outline:none;
+    cursor:pointer
+  }

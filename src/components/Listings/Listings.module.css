@@ -1,0 +1,88 @@
+.promoted_listing{
+  grid-column-start:2;
+
+}
+
+.promoted_item{
+position:relative;
+}
+a {
+text-decoration:none;
+}
+
+#promoted_items figure{
+    margin:0 auto;
+    display:grid;
+    max-width: 90%;
+    grid-template-columns:repeat(auto-fill, 350px);
+    justify-content: center;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, 250px);
+    
+  }
+  .promoted_slogan{
+    text-align:center;
+  }
+  .listing_image{
+    display: inline-block;
+    text-align:center;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+  }
+  
+  .listings_center__redirect{
+    margin:2rem auto;
+    text-align:center;
+  }
+  
+  .listings_center__button {
+      font-family: "Montserrat" ,sans-serif;
+      font-weight:500;
+      color:white;
+      cursor:pointer;
+      padding:20px;
+      outline:none;
+      border:none;
+      border-radius:2px;
+      background-color:#F38370;
+  }
+  
+  .listings_center__button:active{
+    background-color:#F0F0F0;
+    color:black;
+    box-shadow: inset 1px 1px 1px rgba(0,0,0, 0.25)
+  }
+
+  figcaption{
+    position:absolute;
+    bottom:0;
+    padding:20px 0 0 5px;
+    color:white;
+    font-weight:800;
+    text-shadow: 1px 1px 1px rgba(48,48,48,0.35);
+    width:100%;
+    height:30%;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(240,240,240,0) 0%, rgba(42, 40, 40, 0.274) 50%, rgba(0, 0, 0, 0.315) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(240,240,240,0) 0%, rgba(42, 40, 40, 0.274) 50%, rgba(0, 0, 0, 0.315) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(240,240,240,0) 0%, rgba(42, 40, 40, 0.274) 50%, rgba(0, 0, 0, 0.315) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+    font-size:1.2rem;
+    
+  }
+   .caption_location{
+    font-size:0.8rem;
+  }
+  .caption_surface{
+    font-size:0.7rem;
+  }
+
+  @media (max-width: 990px) {
+    .promoted_listing{
+      grid-row-start:2;
+      grid-column-start:1;
+      grid-column-end:3;
+    }
+  }
